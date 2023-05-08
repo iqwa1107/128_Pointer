@@ -16,4 +16,13 @@ int main() {
 	mhs.showNim(); //Member accses operator
 
 	mahasiswa& refMhs = mhs; // Pointer referece
+	refMhs.nim = 2; // Member Accses Operator
+	mhs.showNim();
+
+	mahasiswa *pMhs = &mhs; // Pointer referece
+	pMhs->nim = 3; // Arrow operator
+	mhs.showNim();
+	return 0;
+
+
 }
